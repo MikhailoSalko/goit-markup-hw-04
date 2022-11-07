@@ -64,7 +64,6 @@ ul {
 .section-flex {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .link {
@@ -198,7 +197,7 @@ ul {
   text-align: center;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/hero-background.jpg');
+    url('../images/Hero-background.jpg');
   background-color: #c4c4c4;
   background-size: cover;
   background-position: center;
@@ -277,7 +276,6 @@ ul {
   justify-content: center;
   align-items: center;
 
-  width: 270px;
   height: 120px;
   margin-bottom: 30px;
 
@@ -355,6 +353,7 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--customers-color);
   background-color: transparent;
 }
 
@@ -393,6 +392,7 @@ ul {
   min-width: 170px;
   height: 92px;
 
+  color: var(--customers-color);
   border: 1px solid var(--customers-color);
   border-radius: 4px;
 }
@@ -470,12 +470,14 @@ address {
 
 .socials-footer {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.socials-footer-item {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  gap: 10px;
 }
 
 .socials-footer .socials-link {
@@ -560,7 +562,9 @@ address {
   line-height: 1.88;
 }
 
-.portfolio-card:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
