@@ -451,8 +451,7 @@ address {
 
 .footer-nav > .container {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
 }
 
 .footer-container {
